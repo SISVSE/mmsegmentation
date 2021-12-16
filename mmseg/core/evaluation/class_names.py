@@ -52,6 +52,32 @@ def voc_classes():
     ]
 
 
+def ssidb_classes():
+    """SSIDB class names for external use."""
+    return [
+        'background', 'CurvedAtraumaticGrasper_Head',
+        'CurvedAtraumaticGrasper_Body', 'ToothedGrasepr_Head',
+        'ToothedGrasepr_Body', 'FenestratedToothedGrasper_Head',
+        'FenestratedToothedGrasper_Body', 'AtraumaticGrasper_Head',
+        'AtraumaticGrasper_Body', 'MarylandDissectingForceps_Head',
+        'MarylandDissectingForceps_Body', 'SwabGrasper_Head',
+        'SwabGrasper_Body', 'TigerMouthForceps_Head', 'TigerMouthForceps_Body',
+        'ClawForceps_Head', 'ClawForceps_Body', 'AtraumaticGrasperShort_Head',
+        'AtraumaticGrasperShort_Body', 'CrocodileForceps_Head',
+        'CrocodileForceps_Body', 'Liver', 'Gallbladder', 'FlatGrasper_Head',
+        'FlatGrasper_Body', 'PointedForceps_Head', 'PointedForceps_Body',
+        'ClipApplier(Metal)_Head', 'ClipApplier(Metal)_Body',
+        'ClipApplier(Hem-o-lok)_Head', 'ClipApplier(Hem-o-lok)_Body',
+        'Ligasure(Fenestrated)_Head', 'Ligasure(Fenestrated)_Body',
+        'Electrichook', 'Argonbeamer', 'Scissors_Head', 'Scissors_Body',
+        'Stapler_Head', 'Stapler_Body', 'DrainTube', 'EndoTip', 'Thread',
+        'Bipolar(Fenestrated)_Head', 'Bipolar(Fenestrated)_Body',
+        'Rt-angleDissectingForceps_Head', 'Rt-angleDissectingForceps_Body',
+        'Clip', 'Gauze', 'EndoLoop', 'Suction-irrigation', 'Specimenbag',
+        'The_Other_Instruments', 'The_Other_Tissue'
+    ]
+
+
 def cityscapes_palette():
     """Cityscapes palette for external use."""
     return [[128, 64, 128], [244, 35, 232], [70, 70, 70], [102, 102, 156],
@@ -112,10 +138,23 @@ def voc_palette():
             [128, 64, 0], [0, 192, 0], [128, 192, 0], [0, 64, 128]]
 
 
+def ssidb_palette():
+    """SSIDB pallete for external use."""
+    return [(0, 0, 0), (251, 244, 5), (37, 250, 5), (0, 21, 209), (172, 21, 2),
+            (172, 21, 229), (6, 254, 249), (141, 216, 23), (96, 13, 13),
+            (65, 214, 24), (124, 3, 252), (214, 55, 153), (48, 61, 173),
+            (110, 31, 254), (249, 37, 14), (249, 137, 254), (34, 255, 113),
+            (169, 52, 14), (124, 49, 176), (4, 88, 238), (115, 214, 178),
+            (115, 63, 178), (115, 214, 235), (63, 63, 178), (130, 34, 26),
+            (220, 158, 161), (201, 117, 56), (121, 16, 40), (15, 126, 0),
+            (224, 224, 224), (154, 0, 0), (204, 102, 0)]
+
+
 dataset_aliases = {
     'cityscapes': ['cityscapes'],
     'ade': ['ade', 'ade20k'],
-    'voc': ['voc', 'pascal_voc', 'voc12', 'voc12aug']
+    'voc': ['voc', 'pascal_voc', 'voc12', 'voc12aug'],
+    'ssidb': ['ssidb']
 }
 
 
